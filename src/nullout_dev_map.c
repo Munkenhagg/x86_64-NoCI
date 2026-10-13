@@ -8,7 +8,7 @@ struct dev_map nullout_dev_map(void) {
 	outmap.rootfsopts = '\0';
 #endif
 #ifdef SUPPORT_LUKS
-	outmap.encryption = false;
+	outmap.encrypted_root = false;
 #endif
 	return outmap;
 }

@@ -12,6 +12,6 @@ static inline long syscall3(long nr, long a, long b, long c) {
 }
 
 void print(const char *string) {
-	usize length = strlen(string);
+	usize length = _strlen(string);
 	syscall3(1, 1, (long)string, (long)length);
 }

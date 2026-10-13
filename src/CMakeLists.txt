@@ -13,7 +13,7 @@ option(_SUPPORT_LUKS "Allows for unencrypting a luks-encrypted root properly" ON
 option(_SUPPORT_LVM "Allows for a LVM filesystem to be used")
 
 add_executable(init
-	init.c contains_word.c handle_cmdline_arg.c strlen.c mount.c
+	init.c contains_word.c handle_cmdline_arg.c strlen.c mount.c print.c nullout_dev_map.c
 	asm/mount.asm asm/mkdir.asm asm/chdir.asm asm/chroot.asm asm/execve.asm asm/exit.asm
 )
 
